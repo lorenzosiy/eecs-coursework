@@ -1,0 +1,251 @@
+body{
+  margin: 0px;
+  background-color: white;
+}
+
+a{
+  font-family: "Source Sans Pro", sans-serif;
+  color: #05274C;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background-color: #05274C;
+  color: white;
+
+}
+
+h1{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 4em;
+  color: #05274C;
+  margin: 0px;
+}
+
+h2{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5em;
+  color: #05274C;
+  margin: 0px;
+}
+
+@media (min-width: 769px){
+  /* Desktop layout */
+  .container {
+     display: grid;
+     grid-template-columns: 0.25fr 2fr 2fr 2fr 2fr 0.25fr;
+     grid-template-rows: 0.25fr 0.1fr 0.5fr 0.2fr 1fr 1fr;
+     grid-template-areas:
+        "section_1 section_1 section_1 section_1 section_1 section_1"
+        "     .    section_2 section_2 section_2 section_2       .    "
+        "     .    section_3 section_3 section_3 section_3       .    "
+        "     .    section_4 section_4 section_4 section_4       .    "
+        "     .    section_5 section_6 section_7 section_8     .    "
+        "     .    section_9 section_10 section_11 section_12     .    ";
+     min-height: 100vh;
+  }
+}
+
+@media (max-width: 768px){
+  /* Desktop layout */
+  .container {
+     display: grid;
+     grid-template-columns: 0.25fr 2fr 2fr 0.25fr;
+     grid-template-rows: 0.25fr 0.4fr 0.9fr 0.2fr 1fr 1fr 1fr 1fr;
+     grid-template-areas:
+        "section_1 section_1 section_1 section_1"
+        "     .    section_2 section_2    .    "
+        "     .    section_3 section_3    .    "
+        "     .    section_4 section_4    .    "
+        "     .    section_5 section_6    .    "
+        "     .    section_7 section_8    .    "
+        "     .    section_9 section_10   .    "
+        "     .    section_11 section_12   .    ";
+     min-height: 100vh;
+  }
+}
+
+nav{
+   grid-area: section_1;
+   padding: 5px;
+   margin: 5px;
+   background-color: white;
+}
+
+.nav_item{
+  padding: 5px 10px 5px 10px;
+  color: #05274C;
+}
+
+
+.title{
+   grid-area: section_2;
+   background-color: white;
+   padding-left: 5px;
+   padding-right: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.description{
+   grid-area: section_3;
+   background-color: white;
+   padding: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+   margin-bottom: 50px;
+   font-family: "Source Sans Pro", sans-serif;
+   font-size: 1.5em;
+}
+
+.secondary_title{
+   grid-area: section_4;
+   background-color: white;
+   padding-left: 5px;
+   padding-right: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.card1{
+   grid-area: section_5;
+   background-color: white;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card1:hover{
+   background-color: #05274C;
+}
+
+.card1 a:hover{
+   color: white;
+}
+
+.card2{
+   grid-area: section_6;
+   background-color: white;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card2:hover{
+   background-color: #05274C;
+}
+
+.card2 a:hover{
+   color: white;
+}
+
+.card3{
+   grid-area: section_7;
+   background-color: white;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card3:hover{
+   background-color: #05274C;
+}
+
+.card3 a:hover{
+   color: white;
+}
+
+.card4{
+   grid-area: section_8;
+   background-color: white;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card4:hover{
+   background-color: #05274C;
+}
+
+.card4 a:hover{
+   color: white;
+}
+
+.card5{
+   grid-area: section_9;
+   background-color: white;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card5:hover{
+   background-color: #05274C;
+}
+
+.card5 a:hover{
+   color: white;
+}
+
+.card6{
+   grid-area: section_10;
+   background-color: white;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card6:hover{
+   background-color: #05274C;
+}
+
+.card6 a:hover{
+   color: white;
+}
+
+.card7{
+   grid-area: section_11;
+   background-color: white;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card7:hover{
+   background-color: #05274C;
+}
+
+.card7 a:hover{
+   color: white;
+}
+
+.card8{
+   grid-area: section_12;
+   background-color: white;
+   padding: 5px;
+   margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+.card8:hover{
+   background-color: #05274C;
+}
+
+.card8 a:hover{
+   color: white;
+}
+
+.category_image{
+  margin: 10px 0px 0px 0px;
+  height: 225px;
+  width: 200px;
+  border-radius: 10px;
+}
