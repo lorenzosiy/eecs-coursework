@@ -26,44 +26,189 @@ nav{
   color: #05274C;
 }
 
-@media (min-width: 481px){
+h1{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 4em;
+  color: #05274C;
+  margin: 0px;
+}
+
+h4{
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
+  color: #05274C;
+  margin: 0px;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2em;
+}
+
+hr {
+  margin: 5px;
+  padding: 0px;
+}
+
+@media (min-width: 769px){
   .container {
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-columns: 0.25fr 4fr 4fr 0.25fr;
+     grid-template-rows: 0.5fr 0.1fr 0.1fr 0.1fr auto auto auto auto auto auto auto;
      grid-template-areas:
-        "section_1     .     section_2 section_2"
-        "section_3 section_4 section_5 section_6"
-        "section_7 section_7 section_7 section_6";
+        "section_1 section_1 section_1 section_1"
+        " . section_2 section_2 . "
+        " . section_3 section_3 ."
+        " . section_4 section_4 ."
+        " section_5 section_5 section_5 section_5"
+        " section_6 section_6 section_6 section_6"
+        " section_7 section_7 section_7 section_7"
+        " section_8 section_8 section_8 section_8"
+        " section_9 section_9 section_9 section_9"
+        " section_10 section_10 section_10 section_10"
+        " section_11 section_11 section_11 section_11";
      min-height: 100vh;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
    /* smartphone layout */
    .container {
       display: grid;
-      grid-template-columns: 0.3fr 0.7fr;
-      grid-template-rows: 0.5fr 0.5fr 2fr 2fr 2fr 2fr;
+      grid-template-columns: 0.25fr 8fr 0.25fr;
+      grid-template-rows: 0.4fr 0.1fr 0.1fr 0.1fr auto auto auto auto auto auto auto;
       grid-template-areas:
-         "section_1     .    "
-         "section_2 section_2"
-         "section_3 section_3"
-         "section_4 section_4"
-         "section_5 section_5"
-         "section_7 section_7";
+        "section_1 section_1 section_1"
+        " . section_2 . "
+        " . section_3 ."
+        " . section_4 ."
+        " section_5 section_5 section_5 "
+        " section_6 section_6 section_6 "
+        " section_7 section_7 section_7 "
+        " section_8 section_8 section_8 "
+        " section_9 section_9 section_9 "
+        " section_10 section_10 section_10 "
+        " section_11 section_11 section_11 ";
       min-height: 100vh;
    }
 
-   .aside{
-     display: none;
+   .story1{
+     padding-top: 20px;
+     padding-bottom: 20px;
    }
 
-   .menu1{
-     height: 100%;
+   .story2{
+     padding-top: 20px;
+     padding-bottom: 20px;
    }
 
-   .menu2{
-     height: 100%;
+   .story3{
+     padding-top: 20px;
+     padding-bottom: 20px;
    }
+
+   .story4{
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
+
+   .story5{
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
+
+   .story6{
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
+
+   .story7{
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
+
+}
+
+.title{
+   grid-area: section_2;
+   background-color: white;
+   padding-left: 8px;
+   padding-right: 8px;
+   margin: 0px;
+}
+
+.secondary_title{
+   grid-area: section_3;
+   background-color: white;
+   padding-left: 8px;
+   padding-right: 8px;
+   font-size: 2em;
+   font-family: "Source Sans Pro", sans-serif;
+   margin: 0px;
+}
+
+.description{
+   grid-area: section_4;
+   background-color: white;
+   padding: 8px;
+   font-family: "Source Sans Pro", sans-serif;
+   font-size: 1.2em;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 20px;
+   margin-bottom: 50px;
+}
+
+.story1{
+  grid-area: section_5;
+  background-color: #8AC0DE;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.story2{
+  grid-area: section_6;
+  background-color: #C4C4CF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.story3{
+  grid-area: section_7;
+  background-color: #8AC0DE;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.story4{
+  grid-area: section_8;
+  background-color: #C4C4CF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.story5{
+  grid-area: section_9;
+  background-color: #8AC0DE;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.story6{
+  grid-area: section_10;
+  background-color: #C4C4CF;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.story7{
+  grid-area: section_11;
+  background-color: #8AC0DE;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+}
+
+div figure{
+  text-align: center;
 }

@@ -51,7 +51,7 @@ h2{
   .container {
      display: grid;
      grid-template-columns: 0.25fr 5fr 0.25fr;
-     grid-template-rows: 0.2fr 0.25fr 0.4fr 0.15fr 1fr 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: 0.18fr 0.25fr 0.4fr 0.15fr 1fr 1fr 1fr 1fr 1fr 1fr;
      grid-template-areas:
         "section_1 section_1"
         "     .    section_2"
@@ -87,6 +87,7 @@ nav{
    padding-right: 5px;
    margin-left: 5px;
    margin-right: 5px;
+   margin-top: 5px;
 }
 
 .description{
