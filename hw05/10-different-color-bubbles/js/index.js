@@ -35,7 +35,7 @@ const colors = [
 var count = 0;
 
 while (count < 200){
-  makeBubble(colors[random(0,4)])
+  makeBubble(colors[random(0,5)])
   count += 1;
 }
 
