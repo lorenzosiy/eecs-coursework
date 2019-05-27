@@ -1,0 +1,248 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  font: #262F34;
+}
+
+section {
+  font-family: 'Barlow', sans-serif;
+  font: #262F34;
+  font-size: 1.25em;
+}
+
+a{
+  font-family: "Roboto", sans-serif;
+  color: #063852;
+  text-decoration: none;
+  padding: 0px;
+}
+
+@media (min-width: 769px){
+  /* Desktop layout */
+  .container {
+     display: grid;
+     grid-template-columns: 0.25fr 2fr 2fr 2fr 2fr 2fr 2fr 0.25fr;
+     grid-template-rows: 1.2fr 8.8fr 15fr 9fr 3fr;
+     grid-template-areas:
+        "     section1    section1 section1 . section2 section2 section2  . "
+        "     .    section3 section3 section3 section4 section4 section4 .    "
+        "     section5    section5 section5 section5 section5 section5 section5 section5   "
+        "     section6    section6 section6 section6 section6 section6 section6 section6   "
+        "     section7    section7 section7 section7 section7 section7 section7 section7   ";
+     width: 100%;
+     /* min-height: 100vh; */
+     h
+  }
+}
+
+.logoDiv{
+  grid-area: section1;
+  /* display: inline-block; */
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+}
+
+.navLogo{
+  height: 60px;
+  /* padding-left: 30px;  */
+  align-content:center;
+  display: inline-block;
+  /* background: red; */
+}
+
+.logoText{
+  display: inline-block;
+  margin: 0px;
+  padding-top: 15px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  color: #063852;
+  font-weight: 900;
+}
+
+
+.nav{
+  grid-area: section2;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 40px;
+  height: 100%;
+}
+
+.nav a:hover{
+  color: #D55448;
+  transition-timing-function: ease-in;
+  text-decoration: line-through;
+}
+
+.nav_item{
+  padding: 30px;
+  font-size: 1.2em;
+}
+
+/* LANDING PAGE SECTION */
+
+.landingImageSection{
+  grid-area: section3;
+  width: 100%;
+  height: calc(100vh - 12vh);
+  vertical-align: middle;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.landingImage{
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 15%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  vertical-align: middle;
+  border: solid 5px;
+  border-color: #063852;
+}
+
+.description{
+  width: 100%;
+  height: calc(100vh - 12vh);
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  line-height: 2em;
+}
+
+.description h1{
+  margin-top: 20px;
+}
+
+.description a:hover {
+  color: #D55448;
+}
+
+.descriptionSection{
+  grid-area: section4;
+  padding-right: 30px;
+}
+
+.contactLogo{
+  padding-top: 30px;
+  padding-right: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+/* .contactLogo:hover{
+  transform: translateY(-5px);
+} */
+
+/* PROJECTS SECTION */
+.projectSection{
+  grid-area: section5;
+  background-color: #B0E0E6;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.projectSection h1{
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+.projectSection section{
+  font-size: 25px;
+}
+
+.projectCard{
+  height: 27.5%;
+  width: 100%;
+  margin-top: 20px;
+  background: lightpink;
+}
+
+/* WRITING SECTION */
+.writingSection{
+  grid-area: section6;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.writingSection h1{
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+.writingSection section{
+  font-size: 25px;
+}
+
+.writingCard{
+  height: 350px;
+  width: 30%;
+  margin: 30px 10px 20px 10px;
+  background: lightpink;
+  display: inline-block;
+}
+
+.writingCard:hover{
+  transform: translateY(-10px);
+  transition-timing-function: all 0.3s ease-in;
+}
+
+.writingImage{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  text-align: center;
+  display: float;
+}
+
+/* CONTACT SECTION */
+.contactSection{
+  grid-area: section7;
+  background-color: #F0EFEA;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contactSection h1{
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+.contactSection section{
+  font-size: 25px;
+}
