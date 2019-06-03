@@ -11,12 +11,16 @@ body *{
 h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
+  color: #262F34;
   font-size: 50px;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  color: #262F34;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 p {
@@ -42,7 +46,7 @@ a{
   .container {
      display: grid;
      grid-template-columns: 0.25fr 2fr 2fr 2fr 2fr 2fr 2fr 0.25fr;
-     grid-template-rows: 1.2fr 8.8fr auto 9fr 3fr;
+     grid-template-rows: 1.2fr auto auto auto 3fr;
      grid-template-areas:
         "     section1    section1 section1 . section2 section2 section2  . "
         "     .    section3 section3 section3 section4 section4 section4 .    "
@@ -96,9 +100,11 @@ a{
 }
 
 .nav a:hover{
-  color: #D55448;
+  color: white;
+  background-color: #D55448;
+  border-radius: 5px;
   transition-timing-function: ease-in;
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
 }
 
 .nav_item{
@@ -111,11 +117,13 @@ a{
 .landingImageSection{
   grid-area: section3;
   width: 100%;
-  height: calc(100vh - 12vh);
+  height: calc(100vh - 12vh - 10px);
+  overflow: hidden;
   vertical-align: middle;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   text-align: center;
   justify-content: center;
   flex-direction: column;
@@ -124,6 +132,8 @@ a{
 .landingImage{
   width: 35vw;
   height: 70vh;
+  min-height: 400px;
+  /* position: static; */
   object-fit: cover;
   border-radius: 15%;
   display: inline-block;
@@ -137,12 +147,17 @@ a{
 
 .description{
   width: 100%;
-  height: calc(100vh - 12vh);
+  color: #262F34;
+  height: calc(100vh - 12vh - 10px);
+  overflow: hidden;
+  /* position: static; */
+  object-fit: cover;
   text-align: left;
   justify-content: center;
   flex-direction: column;
   display: flex;
   line-height: 2em;
+  margin-bottom: 10px;
 }
 
 .description h1{
@@ -159,15 +174,11 @@ a{
 }
 
 
-
-/* .contactLogo:hover{
-  transform: translateY(-5px);
-} */
-
 /* PROJECTS SECTION */
 .projectSection{
   grid-area: section5;
   background-color: #B0E0E6;
+  /* background-color: #F5F7F8; */
   text-align: center;
   /* padding-bottom: 10px; */
 }
@@ -176,18 +187,29 @@ a{
   margin-top: 25px;
   margin-bottom: 15px;
   font-weight: 900;
+  color: #262F34;
 }
 
 .projectSection section{
   font-size: 25px;
   margin-bottom: 20px;
+  color: #262F34;
+}
+
+.projectSection hr{
+  border-color: #262F34;
+  width: 15%;
+  text-align: center;
+  margin-top: 40px;
+
 }
 
 .projectCard{
-  height: 50vh;
+  height: 55vh;
   width: 100vw;
+  min-height: 200px;
   /* margin-top: 20px; */
-  border: solid 1px;
+  /* border: solid 1px; */
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -196,35 +218,70 @@ a{
 }
 
 .projectImageContainer{
-  /* text-align: left; */
-  width: 50%;
+  width: 45%;
   height: 100%;
-  border: solid 1px;
-  text-align: center;
-  align-content: center;
-  display: inline-block;
+  /* border: solid 1px; */
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projectImage{
-  /* text-align: left; */
-  width: 80%;
-  height: 100%;
+  width: auto;
+  height: 62.5%;
+  /* min-height: 200px; */
   text-align: center;
-  vertical-align: text-top;
-  align-content: center;
   display: inline-block;
 }
 
 .projectDescription{
-  /* text-align: right;  */
-  width: 50%;
+  width:55%;
   height: 100%;
+  min-height: 200px;
   text-align: left;
-  border: solid 1px;
-  vertical-align: middle;
-  align-self: center;
-  justify-self: center; 
+  /* border: solid 1px; */
+  padding: 0px 40px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
+  line-height: 1.75em;
+  color: #262F34;
 }
+
+.projectDescription h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #262F34;
+}
+
+.projectDescription p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #262F34;
+}
+
+.projectDescriptionText button{
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1em;
+  border: solid 1px;
+  border-color: #063852;
+}
+
+.projectDescriptionText button:hover{
+  background: #D55448;
+  border-color: #D55448;
+  color: white;
+}
+
 
 /* WRITING SECTION */
 .writingSection{
@@ -237,16 +294,19 @@ a{
   margin-top: 25px;
   margin-bottom: 15px;
   font-weight: 900;
+  color: #262F34;
 }
 
 .writingSection section{
   font-size: 25px;
+  padding-top: 10px;
+  color: #262F34;
 }
 
 .writingCard{
-  height: 55vh;
+  height: 50vh;
   width: 30%;
-  margin: 30px 15px 20px 15px;
+  margin: 30px 15px 10px 15px;
   /* background: lightpink; */
   display: inline-block;
   vertical-align: middle;
@@ -281,7 +341,7 @@ a{
   height: 20%;
   font-weight: 900;
   font-size: 1.25em;
-  padding: 1vw;
+  /* padding: 1vw; */
   color: #262F34;
   text-align: left;
   margin: 0;
@@ -301,10 +361,12 @@ a{
   margin-top: 25px;
   margin-bottom: 15px;
   font-weight: 900;
+  color: #262F34;
 }
 
 .contactSection section{
   font-size: 25px;
+  color: #262F34;
 }
 
 .contactLogo{
@@ -313,4 +375,110 @@ a{
   height: 30px;
   width: 30px;
   border-radius: 5px;
+}
+
+@media (max-width: 768px){
+  /* Desktop layout */
+  .container {
+     display: grid;
+     grid-template-columns: auto;
+     grid-template-rows: auto auto auto auto auto auto;
+     grid-template-areas:
+        " section1 "
+        " section3 "
+        " section4 "
+        " section5 "
+        " section6 "
+        " section7 ";
+     width: 100%;
+     /* min-height: 100vh; */
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .landingImage{
+    width: 80%;
+    height: 80%;
+  }
+
+  .descriptionSection{
+    padding: 0px 0px 0px 10px;
+  }
+
+  .description{
+    text-align: center;
+    height: auto;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .description h1{
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .descriptionLogos{
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .projectSection{
+    padding-bottom: 70px;
+    overflow-x: hidden;
+  }
+
+  .projectCard{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .projectImageContainer{
+    width: auto;
+  }
+
+  .projectDescription{
+    width: 100%;
+    padding: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 600px;
+  }
+
+  .projectDescription h2{
+    padding: 5px;
+    line-height: 1.2em;
+  }
+
+  .projectDescription button{
+    text-align: center;
+    width: 100%;
+  }
+
+  .projectImage{
+    max-width: 90%;
+  }
+
+  .writingCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .writingImage{
+    height: 300px;
+  }
+
+  .writingText{
+    text-align: center;
+  }
+
+  .contactSection{
+    padding: 10px;
+  }
 }
