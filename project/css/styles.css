@@ -46,7 +46,7 @@ a{
   .container {
      display: grid;
      grid-template-columns: 0.25fr 2fr 2fr 2fr 2fr 2fr 2fr 0.25fr;
-     grid-template-rows: 1.2fr auto auto auto 3fr;
+     grid-template-rows: auto auto auto auto 3fr;
      grid-template-areas:
         "     section1    section1 section1 . section2 section2 section2  . "
         "     .    section3 section3 section3 section4 section4 section4 .    "
@@ -375,10 +375,33 @@ a{
 
 .contactLogo{
   margin-top: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
   height: 30px;
   width: 30px;
   border-radius: 5px;
+}
+
+.backToTopButton{
+  width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1em;
+  border: solid 1px;
+  border-color: #063852;
+  margin-bottom: 10px;
+}
+
+.backToTopButton:hover{
+  border-color: #D55448;
+}
+
+.upArrow{
+  height: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 @media (max-width: 1125px){

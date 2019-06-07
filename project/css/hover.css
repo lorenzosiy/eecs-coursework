@@ -20,7 +20,9 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+
+/* focus pseudoclass removed */
+.hvr-grow:hover, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -1199,8 +1201,11 @@
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
 }
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #2098D1;
+
+/* removed focus pseudoclass */
+.hvr-fade:hover, .hvr-fade:active {
+  /* color changed to my orange  */
+  background-color: #D55448;
   color: white;
 }
 
@@ -2187,16 +2192,18 @@
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #2098D1;
+  background: #D55448;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+
+/* focus pseudoclass removed */
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
@@ -2435,7 +2442,9 @@
   -webkit-transition-property: box-shadow;
   transition-property: box-shadow;
 }
-.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+
+/* removed focus pseudoclass */
+.hvr-glow:hover, .hvr-glow:active {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
